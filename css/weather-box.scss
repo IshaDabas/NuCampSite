@@ -1,0 +1,39 @@
+// _weather-box.scss
+
+$weather-bg: $color-pale;
+$weather-text: #003b4d;
+$weather-accent: darken($color-teal, 15%);
+$weather-shadow: rgba(0, 0, 0, 1);
+
+.weather-box {
+  background: $weather-bg;
+  border: 2px solid $color-mid;
+  color: $weather-text;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px $weather-shadow;
+  transition: all 0.3s ease-in-out;
+  font-family: $body-font;
+  padding: 1rem;
+  max-width: 280px;
+  max-height: 128px;
+  font-size: 0.95rem;
+
+  h3 {
+    font-family: $header-font;
+    color: $weather-accent;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  #weatherData {
+    p {
+      margin: 0;
+      font-size: 1rem;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+  }
+}
